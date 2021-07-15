@@ -33,7 +33,7 @@ public class demo {
             }
 
             // gọi funtion check nguyên âm return về true or false
-            System.out.println(isVowel(convertKey));
+            System.out.println(isVowel(input.charAt(i)));
         }
         System.out.println("👏 chữ cái nguyên âm: "  + Arrays.toString(strings));
         System.out.println("👏 chữ cái phụ âm: "     + Arrays.toString(string1s));
@@ -60,7 +60,8 @@ public class demo {
      * @param key
      * @return
      */
-    public static boolean isVowel(String key) {
+    public static boolean isVowel(char c) {
+        String key = String.valueOf(c);
         switch (key) {
             case "a":
             case "o":
