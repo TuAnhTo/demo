@@ -31,6 +31,9 @@ public class demo {
                     break;
                 default: string1s = addKeyToArray(string1s, convertKey);
             }
+
+            // gọi funtion check nguyên âm return về true or false
+            System.out.println(isVowel(convertKey));
         }
         System.out.println("👏 chữ cái nguyên âm: "  + Arrays.toString(strings));
         System.out.println("👏 chữ cái phụ âm: "     + Arrays.toString(string1s));
@@ -49,5 +52,23 @@ public class demo {
         arraylist.add(key);
         array = arraylist.toArray(array);
         return array;
+    }
+
+
+    /**
+     * check nguyên âm và phụ âm
+     * @param key
+     * @return
+     */
+    public static boolean isVowel(String key) {
+        switch (key) {
+            case "a":
+            case "o":
+            case "e":
+            case "i":
+            case "u":
+               return true;
+            default: return false;
+        }
     }
 }
