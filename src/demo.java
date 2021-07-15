@@ -57,7 +57,7 @@ public class demo {
 
     /**
      * check nguyên âm và phụ âm
-     * @param key
+     * @param c
      * @return
      */
     public static boolean isVowel(char c) {
