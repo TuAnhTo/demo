@@ -11,7 +11,7 @@ public class demo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println(" nhap vao chuoi can tach..... : ");
+        System.out.println(" nhập vào chuỗi cần kiểm tra..... : ");
 
         String input        = scanner.nextLine();
         String[] strings    = new String[0];
